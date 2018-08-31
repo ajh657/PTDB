@@ -19,10 +19,14 @@ connection.connect(function(err) {
     console.log('connected as id ' + connection.threadId);
   });
 
-console.log(GetData(`https://pokeapi.co/api/v2/pokemon/4/`));
+sleep(1000);
+
+
 
 for (let index = 1; index < 803; index++) {
     var Data = GetData(`https://pokeapi.co/api/v2/pokemon/${index}/`);
+
+    console.log(Data)
 
 
     if (Data.types.length == 2) {
