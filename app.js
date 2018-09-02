@@ -21,8 +21,6 @@ connection.connect(function(err) {
 
 sleep(1000);
 
-
-
 for (let index = 1; index < 803; index++) {
     var Data = GetData(`https://pokeapi.co/api/v2/pokemon/${index}/`);
 
